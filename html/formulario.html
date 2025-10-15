@@ -5,7 +5,7 @@
   </head>
   <body>
     <h2>Formulário</h2>
-    <form action="./exercicios.html" method="POST">
+    <form action="./exercicios.html" method="GET">
       <div>
         <div><label for="nome">Nome:</label></div>
         <input type="text" id="nome" name="nome" required />
@@ -17,6 +17,41 @@
       <div>
         <div><label for="senha">Senha:</label></div>
         <input type="password" id="senha" name="senha" required />
+      </div>
+      <div>
+        <div><label for="obs">Observações:</label></div>
+        <textarea name="obs" id="obs" rows="5" cols="25"></textarea>
+      </div>
+      <div>
+        <div>Tipo de residência:</div>
+        <input type="radio" name="residencia" id="casa" value="casa" />
+        <label for="casa">Casa</label>
+        <input type="radio" name="residencia" id="sitio" value="sitio" />
+        <label for="sitio">Sitio</label>
+        <input type="radio" name="residencia" id="apto" value="apto" />
+        <label for="apto">Apto</label>
+        <input type="radio" name="residencia" id="fazenda" value="fazenda" />
+        <label for="fazenda">Fazenda</label>
+      </div>
+      <div>
+        <label for="plano">Plano:</label>
+        <select name="plano" id="plano" required>
+          <option value="">Selecione um Plano</option>
+          <option value="gratuito">Plano Gratuito</option>
+          <option value="silver">Plano Silver - R$ 49,00</option>
+          <option value="gold">Plano Gold - R$ 99,00</option>
+        </select>
+      </div>
+      <div>
+        <div>Interesses:</div>
+        <input type="checkbox" name="tecnologia" id="tecnologia" />
+        <label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" name="musica" id="musica" />
+        <label for="musica">Música</label>
+        <input type="checkbox" name="jogos" id="jogos" />
+        <label for="jogos">Jogos</label>
+        <input type="checkbox" name="viagens" id="viagens" />
+        <label for="viagens">Viagens</label>
       </div>
       <div>
         <button type="submit">Salvar</button>
