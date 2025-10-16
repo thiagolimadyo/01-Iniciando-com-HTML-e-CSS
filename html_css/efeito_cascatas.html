@@ -1,0 +1,31 @@
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Efeito Cascata no CSS</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: crimson;
+      }
+
+      #area2 {
+        font-family: monospace;
+        background-color: green;
+      }
+
+      .maior {
+        width: 150px;
+        height: 150px;
+      }
+
+      #maior {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maior" style="width: 200px" id="maior">Área #01</div>
+    <div id="area2">Área #02</div>
+  </body>
+</html>
