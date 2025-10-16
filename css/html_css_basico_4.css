@@ -1,0 +1,13 @@
+body {
+  background-color: #111;
+  color: #ddd;
+}
+
+.pares {
+  background-color: crimson;
+  color: #ddd;
+}
+
+.destaque {
+  font-size: 2rem;
+}
